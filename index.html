@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator Using | html,css & javascript</title>
+    <!-- Fontawesome cdn link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Custom css file here -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>BMI Calculator. <i class="fa-sharp fa-solid fa-dumbbell"></i> </h1>
+        <div class="center">
+
+            <div class="box user">
+                <span class="error" id="error">All the fields fill Correctly.</span>
+                <form>
+                    <input type="text" id="userName" autocomplete="off" class="inputs" placeholder="Enter your name...">
+                    <input type="number" id="heightInCm" autocomplete="off" class="inputs"
+                        placeholder="Enter height in (cm)...">
+                    <input type="number" id="weightInKg" autocomplete="off" class="inputs"
+                        placeholder="Enter weight in (kg)...">
+                    <button type="submit" class="calcBmi">Calculate BMI</button>
+                </form>
+            </div>
+
+            <div class="box result">
+                <h3>Your Body Mass Index Results Shows Here....</h3>
+                <h2 class="nameText"></h2>
+                <p class="showBmi"></p>
+                <p class="suggestion"></p>
+                <button class="resetBtn">Clear</button>
+            </div>
+        </div>
+
+        <!-- Footer Section start here -->
+        <footer>
+            <p>Copyright &copy; 2024. All Rights Reserved
+                <a href="https://github.com/Raza749">Raza Ali</a>
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Link JavaScript file here -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
