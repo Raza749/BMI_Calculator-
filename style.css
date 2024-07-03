@@ -1,0 +1,330 @@
+/* Import fons  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: url("./bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h1{
+    font-size: 50px;
+    background-color: #f14c4ca4;
+    padding: 10px;
+    font-weight: 800;
+    color:lightgrey;
+    backdrop-filter: blur(8px);
+    border-radius: 3px;
+}
+
+
+.container .center {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    transition: .5s ease ;
+}
+
+.container .center .box{
+    width: 35%;
+    height: 85%;
+    background-color:rgba(0, 0, 0, 0.139);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.206);
+}
+
+.container .center .user{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ffff;
+    border-top: 1px solid #ffff;
+}
+
+.container .center .user .error{
+    font-size: 24px;
+    color:red;
+    text-align: center;
+    font-weight: 600;
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.container .center .user form .inputs{
+    width: 100%;
+    padding:17px;
+    background-color: rgba(0, 0, 0, 0.52);
+    border: none;
+    margin: 20px 0;
+    font-size: 22px;
+    color: lightgrey;
+    border-radius: 5px;
+    outline-color:white ;
+    backdrop-filter:blur(10px);
+    font-weight: 600;
+}
+
+::placeholder{
+    color: lightgrey;
+}
+
+.container .center .user form button{
+    width: 100%;
+    padding:17px;
+    background-color:#f75777c5;
+    border: none;
+    margin: 20px 0;
+    font-size: 22px;
+    color: lightgrey;
+    border-radius: 5px;
+    outline-color:white ;
+    backdrop-filter:blur(10px);
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+.container .center .user form button:hover{
+    opacity: 0.8;
+    transform: translateY(3px);
+}
+
+
+
+
+
+
+
+/* Result Box styling start here */
+.container .center .result{
+    background-color: #f75777c3;
+    padding: 25px;
+    transition: .4 ease;
+    /* transform: translateY(150%); */
+    position: absolute;
+    visibility: hidden;
+}
+
+.container .center .result h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 12px 0;
+    color: white;
+    font-weight: 500;
+}
+
+.container .center .result .nameText{
+    font-size: 27px;
+    margin: 10px 0;
+    color: lightgray;
+    text-align: center;
+}
+
+.container .center .result p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    color: lightgray;
+}
+
+.container .center .result button{
+    width: 100%;
+    padding:17px;
+    background-color: rgba(0, 0, 0, 0.633);
+    border: none;
+    margin: 50px 0 0  0;
+    font-size: 22px;
+    color: lightgrey;
+    border-radius: 5px;
+    outline-color:white ;
+    backdrop-filter:blur(10px);
+    cursor: pointer;
+    transition: .5s ease-in;
+    
+}
+
+.container  .center .result button:hover{
+    opacity: 0.8;
+    transform: translateY(3px);
+}
+
+
+
+
+
+
+
+
+/* Footer section styling start here */
+
+footer{
+    width: 100%;
+    height: 92px;
+    background-color: #f75777af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: white;
+    font-size: 20px;
+}
+
+footer a{
+   font-size: 23px;
+   color: royalblue;
+   font-weight: 600;
+}
+
+
+
+
+
+
+/* Media Query for Mobile Responsive devices */
+@media(max-width:768px){
+
+    .container {
+        background-image: url("mobileBg.jpg");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container h1{
+        font-size: 20px;
+        background-color:rgba(0, 0, 0, 0.369);
+        color: white;
+    }
+   
+    .container .center{
+        flex-direction: column;
+    }
+
+    .container .center .box{
+        width: 97%;
+        height: 48%;
+    }
+
+
+    
+.container .center .user{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ffff;
+}
+
+.container .center .user .error{
+    font-size: 15px;
+}
+
+.container .center .user form .inputs{
+    font-size: 14px;
+    width: 100%;
+    padding: 14px;
+    margin: 5px 0 ;
+    font-weight: 400;
+}
+
+.container .center .user form button{
+    font-size: 14px;
+    width: 100%;
+    padding: 14px;
+    margin: 5px 0 ;
+    font-weight: 400;
+}
+
+.contianer .center .result{
+    padding: 10px;
+}
+
+.container .center .result h3{
+    font-size: 15px;
+    text-align: center;
+    margin: 7px 0;
+    color: white;
+    font-weight: 500;
+}
+
+.container .center .result .nameText{
+    font-size: 22px;
+    font-weight: 800;
+    margin: 7px 0;
+    font-family: cursive;
+}
+
+.container .center .result p{
+    font-size: 14px ;
+    margin: 7px 0;
+}
+
+.container .center .result button{
+    font-size: 14px;
+    width: 100%;
+    padding: 14px;
+    margin: 5px 0 ;
+    font-weight: 400;
+}
+
+
+
+    /* Footer  */
+    footer{
+        background-color: rgba(0, 0, 0, 0.51);
+        backdrop-filter: blur(10px);
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    footer p a{
+        font-size: 16px;
+    }
+
+}
+
+
+/* 
+Bmi calculator formula
+The BMI (Body Mass Index) calculator formula is a simple calculation that uses a person’s height and weight to estimate their body fatness. The formula is:
+
+Metric System: BMI = weight (in kg) / height (in meters)²
+
+English System: BMI = weight (in pounds) / height (in inches)² × 703
+
+Alternate Formula for English System: BMI = weight (in kg) / height (in cm)² × 10,000
+
+Note: The BMI formula is used to categorize an adult’s weight status as underweight, normal weight, overweight, or obese. The categories are:
+
+Underweight: BMI < 18.5
+Normal weight: BMI = 18.5-24.9
+Overweight: BMI = 25-29.9
+Obese: BMI ≥ 30
+Remember to use the correct units of measurement for your height and weight to get an accurate BMI calculation.
+*/
