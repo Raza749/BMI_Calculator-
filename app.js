@@ -81,7 +81,7 @@ function resetResult() {
 
 // Show the results on the result box
 function showResultsOnTheResultBox() {
-    nameText.innerText = uname.value;
+    nameText.innerText = `Hey! ${uname.value}`;
     // let bmi = ((weight.value) / ((height.value * height.value)) * 10000).toFixed(2);
     let bmi = ((weight.value) / ((height.value / 100) * (height.value / 100))).toFixed(2);
 
